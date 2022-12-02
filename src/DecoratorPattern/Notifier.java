@@ -1,13 +1,12 @@
 package DecoratorPattern;
-public class Notifier {
+public interface Notifier {
 
 	/**
 	 * 
 	 * @param mensaje
 	 */
 	
-	public void send(String mensaje) {
-		// mensaje de notificacion
-	}
+	public void send(String mensaje);
+
 
 }

@@ -1,5 +1,5 @@
 package DecoratorPattern;
-public abstract class Decorator extends Notifier {
+public abstract class Decorator implements Notifier {
 
 	private Notifier envoltorio;
 
@@ -13,7 +13,7 @@ public abstract class Decorator extends Notifier {
 	
 	@Override
 	public void send(String mensaje) {
-		//metodo de enviar mensaje
+		envoltorio.send(mensaje);
 	}
 
 }
